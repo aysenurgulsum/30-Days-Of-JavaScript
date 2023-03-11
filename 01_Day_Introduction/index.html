@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30DaysOfJavaScript</title>
+</head>
+
+<body>
+
+    <button onclick="alert('Inline Script')">Bana Tıkla</button>
+
+    <script>
+        console.log("Internal Script")
+        // internal script, head veya body etiketleri arasına yazılabilir. Ancak body kısmına yazılması daha çok tercih edilir.
+    </script>
+
+    <script src="introduction.js"></script> <!-- External Script -->
+
+    <!-- JavaScript harici script linki, head veya body etiketleri arasında olabilir -->
+    <!-- Body kapanış etiektinden önce harici JS dosyanın eklenmesi önerilir -->
+    <!-- Birden fazla JS dosyası projeye eklenebilir -->
+
+    <script src="1_hello_world.js"></script>
+    <script src="3_data_types.js"></script>
+    <script src="4_variables.js"></script>
+
+    <!-- Ana JS dosyası diğer tüm JS dosyalarının altında yer almalıdır. Derlem yapılırken satırlar yukarıdan aşağya okunduğu için ana JS dosyasının en son okunması önem taşımaktadır -->
+
+</body>
+
+</html>
